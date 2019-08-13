@@ -1,0 +1,10 @@
+.page-container {
+  background-color: #122443;
+  position: relative;
+  min-height: 100vh;
+  padding-top: 3em;
+}
+
+.content-wrap {
+  padding-bottom: 2.5em;
+}

@@ -1,0 +1,10 @@
+.input-range {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.input-range__label--value {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #000;
+}
