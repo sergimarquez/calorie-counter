@@ -36,24 +36,16 @@ class Card extends React.Component {
     });
   };
 
+  setValue = (value, type) => {
+    this.setState({ [type]: value });
+  };
+
   handleWeight = value => {
     this.setState({ weight: value });
   };
 
   handleHeight = value => {
     this.setState({ height: value });
-  };
-
-  setActivity = value => {
-    this.setState({ activityLevel: value });
-  };
-
-  setGoal = value => {
-    this.setState({ goal: value });
-  };
-
-  setGender = value => {
-    this.setState({ gender: value });
   };
 
   render() {
@@ -71,9 +63,9 @@ class Card extends React.Component {
             nextClick={this.goNext}
             backClick={this.goBack}
             handleChange={this.handleChange}
-            setGender={this.setGender}
-            gender={this.state.gender}
+            setValue={this.setValue}
             age={this.state.age}
+            gender={this.state.gender}
           />
           <ScreenStats
             activeSection={this.state.activeSection}
@@ -83,18 +75,19 @@ class Card extends React.Component {
             handleHeight={this.handleHeight}
             weight={this.state.weight}
             height={this.state.height}
+            handleChange={this.handleChange}
           />
           <ScreenActivity
             activeSection={this.state.activeSection}
             nextClick={this.goNext}
             backClick={this.goBack}
-            setActivity={this.setActivity}
+            setValue={this.setValue}
           />
           <ScreenGoal
             activeSection={this.state.activeSection}
             nextClick={this.goNext}
             backClick={this.goBack}
-            setGoal={this.setGoal}
+            setValue={this.setValue}
           />
           <ScreenResults
             activeSection={this.state.activeSection}

@@ -18,7 +18,8 @@ class ScreenGender extends React.Component {
       activeBox: gender
     });
 
-    this.props.setGender(gender);
+    let type = "gender";
+    this.props.setValue(gender, type);
   }
 
   render() {

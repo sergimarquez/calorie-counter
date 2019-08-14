@@ -17,7 +17,8 @@ class ScreenActivity extends React.Component {
       activeBox: index
     });
 
-    this.props.setActivity(index);
+    let type = "activityLevel";
+    this.props.setValue(index, type);
   }
 
   render() {

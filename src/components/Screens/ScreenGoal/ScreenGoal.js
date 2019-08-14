@@ -15,7 +15,8 @@ class ScreenGoal extends React.Component {
       activeBox: index
     });
 
-    this.props.setGoal(index);
+    let type = "goal";
+    this.props.setValue(index, type);
   }
 
   render() {
