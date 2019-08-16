@@ -28,7 +28,7 @@ class ScreenResults extends React.Component {
               )}
               kcal per day
             </h2>
-            <BackButton backClick={this.props.backClick} />
+            <BackButton backClick={this.props.buttonClick} />
           </div>
         );
       } else if (this.props.gender === "female")
@@ -46,7 +46,7 @@ class ScreenResults extends React.Component {
               )}{" "}
               kcal per day
             </h2>
-            <BackButton backClick={this.props.backClick} />
+            <BackButton backClick={this.props.buttonClick} />
           </div>
         );
     } else {

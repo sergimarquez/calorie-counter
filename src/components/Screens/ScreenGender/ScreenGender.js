@@ -79,10 +79,10 @@ class ScreenGender extends React.Component {
               </div>
             </div>
           </form>
-          <BackButton backClick={this.props.backClick} />
+          <BackButton backClick={this.props.buttonClick} />
           <NextButton
             disabled={!buttonEnabled}
-            nextClick={this.props.nextClick}
+            nextClick={this.props.buttonClick}
           />
         </div>
       );

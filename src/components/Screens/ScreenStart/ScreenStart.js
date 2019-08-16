@@ -21,7 +21,7 @@ class ScreenStart extends React.Component {
             We calculate your daily calories based on your your stats, life
             style and goals.
           </p>
-          <NextButton nextClick={this.props.nextClick} text={`START`} />
+          <NextButton nextClick={this.props.buttonClick} text={`START`} />
         </div>
       );
     } else {

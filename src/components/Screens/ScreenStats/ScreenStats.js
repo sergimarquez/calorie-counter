@@ -33,8 +33,8 @@ class ScreenStats extends React.Component {
               />
             </div>
           </form>
-          <BackButton backClick={this.props.backClick} />
-          <NextButton nextClick={this.props.nextClick} />
+          <BackButton backClick={this.props.buttonClick} />
+          <NextButton nextClick={this.props.buttonClick} />
         </div>
       );
     } else {

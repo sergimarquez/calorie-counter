@@ -19,11 +19,10 @@ class Card extends React.Component {
     goal: 0
   };
 
-  goNext = () => {
-    this.setState({ activeSection: this.state.activeSection + 1 });
-  };
-  goBack = () => {
-    this.setState({ activeSection: this.state.activeSection - 1 });
+  buttonClick = e => {
+    const type = e.target.id;
+    const sum = type === "next" ? +1 : -1;
+    this.setState({ activeSection: this.state.activeSection + sum });
   };
 
   handleChange = e => {
@@ -55,13 +54,11 @@ class Card extends React.Component {
         <div className="ui large segment very padded center aligned">
           <ScreenStart
             activeSection={this.state.activeSection}
-            nextClick={this.goNext}
-            backClick={this.goBack}
+            buttonClick={this.buttonClick}
           />
           <ScreenGender
             activeSection={this.state.activeSection}
-            nextClick={this.goNext}
-            backClick={this.goBack}
+            buttonClick={this.buttonClick}
             handleChange={this.handleChange}
             setValue={this.setValue}
             age={this.state.age}
@@ -69,8 +66,7 @@ class Card extends React.Component {
           />
           <ScreenStats
             activeSection={this.state.activeSection}
-            nextClick={this.goNext}
-            backClick={this.goBack}
+            buttonClick={this.buttonClick}
             handleWeight={this.handleWeight}
             handleHeight={this.handleHeight}
             weight={this.state.weight}
@@ -79,19 +75,17 @@ class Card extends React.Component {
           />
           <ScreenActivity
             activeSection={this.state.activeSection}
-            nextClick={this.goNext}
-            backClick={this.goBack}
+            buttonClick={this.buttonClick}
             setValue={this.setValue}
           />
           <ScreenGoal
             activeSection={this.state.activeSection}
-            nextClick={this.goNext}
-            backClick={this.goBack}
+            buttonClick={this.buttonClick}
             setValue={this.setValue}
           />
           <ScreenResults
             activeSection={this.state.activeSection}
-            backClick={this.goBack}
+            buttonClick={this.buttonClick}
             gender={this.state.gender}
             age={this.state.age}
             weight={this.state.weight}

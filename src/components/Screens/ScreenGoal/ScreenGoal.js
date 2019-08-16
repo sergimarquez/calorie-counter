@@ -58,10 +58,10 @@ class ScreenGoal extends React.Component {
               <h3>Gain Weight</h3>
             </div>
           </div>
-          <BackButton backClick={this.props.backClick} />
+          <BackButton backClick={this.props.buttonClick} />
           <NextButton
             disabled={!buttonEnabled}
-            nextClick={this.props.nextClick}
+            nextClick={this.props.buttonClick}
           />
         </div>
       );

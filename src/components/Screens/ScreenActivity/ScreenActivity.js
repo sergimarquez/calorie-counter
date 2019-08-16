@@ -80,10 +80,10 @@ class ScreenActivity extends React.Component {
           >
             <h4>Extremely Active (very hard exercise 6+ days per week)</h4>
           </div>
-          <BackButton backClick={this.props.backClick} />
+          <BackButton backClick={this.props.buttonClick} />
           <NextButton
             disabled={!buttonEnabled}
-            nextClick={this.props.nextClick}
+            nextClick={this.props.buttonClick}
           />
         </div>
       );
