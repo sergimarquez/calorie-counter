@@ -1,5 +1,5 @@
 import React from "react";
-import NextButton from "../../NextButton";
+import NextButton from "../../UI/NextButton";
 import dinner from "../../../assets/dinner.svg";
 import "./ScreenStart.css";
 
@@ -13,8 +13,8 @@ class ScreenStart extends React.Component {
       return (
         <div>
           <h2 className="ui header">How many Calories?</h2>
-          <div className="ui image medium start-image">
-            <img src={dinner} />
+          <div className="ui image medium start-image transition">
+            <img src={dinner} alt="people having dinner" />
           </div>
           <p> Discover how many calories you should eat every day. </p>
           <p>

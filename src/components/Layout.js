@@ -8,6 +8,7 @@ const Layout = () => {
   return (
     <div className="page-container">
       <Header />
+
       <div className="content-wrap">
         <Card />
       </div>

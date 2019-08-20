@@ -25,7 +25,11 @@ class Card extends React.Component {
     this.setState({ activeSection: this.state.activeSection + sum });
   };
 
-  handleChange = e => {
+  setValue = (value, type) => {
+    this.setState({ [type]: value });
+  };
+
+  handleAge = e => {
     const name = e.target.name;
     const value = e.target.value;
     const type = e.target.type;
@@ -33,10 +37,6 @@ class Card extends React.Component {
     this.setState({
       [name]: type === "number" ? parseInt(value) : value
     });
-  };
-
-  setValue = (value, type) => {
-    this.setState({ [type]: value });
   };
 
   handleWeight = value => {
@@ -48,7 +48,6 @@ class Card extends React.Component {
   };
 
   render() {
-    console.log(this.state);
     return (
       <div className="ui text container" id="card-container">
         <div className="ui large segment very padded center aligned">
@@ -59,7 +58,7 @@ class Card extends React.Component {
           <ScreenGender
             activeSection={this.state.activeSection}
             buttonClick={this.buttonClick}
-            handleChange={this.handleChange}
+            handleAge={this.handleAge}
             setValue={this.setValue}
             age={this.state.age}
             gender={this.state.gender}

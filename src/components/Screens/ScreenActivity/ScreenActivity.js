@@ -1,6 +1,6 @@
 import React from "react";
-import NextButton from "../../NextButton";
-import BackButton from "../../BackButton";
+import NextButton from "../../UI/NextButton";
+import BackButton from "../../UI/BackButton";
 import "./ScreenActivity.css";
 
 class ScreenActivity extends React.Component {

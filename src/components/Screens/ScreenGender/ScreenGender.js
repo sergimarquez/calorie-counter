@@ -1,6 +1,6 @@
 import React from "react";
-import NextButton from "../../NextButton";
-import BackButton from "../../BackButton";
+import NextButton from "../../UI/NextButton";
+import BackButton from "../../UI/BackButton";
 import male from "../../../assets/male.png";
 import female from "../../../assets/female.png";
 
@@ -29,7 +29,6 @@ class ScreenGender extends React.Component {
       this.props.gender.length > 1;
 
     if (this.show) {
-      console.log(this.state);
       return (
         <div>
           <h2>Select your age and gender</h2>
@@ -71,7 +70,7 @@ class ScreenGender extends React.Component {
                   <input
                     name="age"
                     value={this.props.age}
-                    onChange={this.props.handleChange}
+                    onChange={this.props.handleAge}
                     placeholder="age"
                     type="number"
                   />

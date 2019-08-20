@@ -1,5 +1,5 @@
 import React from "react";
-import BackButton from "../../BackButton";
+import BackButton from "../../UI/BackButton";
 
 class ScreenResults extends React.Component {
   state = {
@@ -11,7 +11,6 @@ class ScreenResults extends React.Component {
   }
 
   render() {
-    console.log(this.props.activityLevel);
     if (this.show) {
       if (this.props.gender === "male") {
         return (
