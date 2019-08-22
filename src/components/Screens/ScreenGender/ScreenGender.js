@@ -33,7 +33,7 @@ class ScreenGender extends React.Component {
         <div>
           <h2>Select your age and gender</h2>
 
-          <div className="ui horizontal segments">
+          <div className="ui horizontal segments" style={{ cursor: "pointer" }}>
             <div
               className={
                 this.state.activeBox === "male"

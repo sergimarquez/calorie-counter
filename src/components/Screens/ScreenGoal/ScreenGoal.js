@@ -26,7 +26,7 @@ class ScreenGoal extends React.Component {
       return (
         <div className="ui header">
           <h2>Slect your goal</h2>
-          <div className="ui horizontal segments">
+          <div className="ui horizontal segments" style={{ cursor: "pointer" }}>
             <div
               className={
                 this.state.activeBox === -500
