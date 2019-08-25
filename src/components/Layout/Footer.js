@@ -1,10 +1,15 @@
 import React from "react";
-import "./Footer.css";
+
+const footerPosition = {
+  position: "absolute",
+  bottom: 0,
+  width: "100%"
+};
 
 const Footer = () => {
   return (
     <footer
-      id="footer-position"
+      style={footerPosition}
       className="ui inverted vertical footer segment center aligned"
     >
       Created by Sergi Marquez | FAQ

@@ -1,12 +1,10 @@
 import React from "react";
-import ScreenStart from "./Screens/ScreenStart/ScreenStart";
-import ScreenGender from "./Screens/ScreenGender/ScreenGender";
-import ScreenStats from "./Screens/ScreenStats/ScreenStats";
-import ScreenActivity from "./Screens/ScreenActivity/ScreenActivity";
-import ScreenGoal from "./Screens/ScreenGoal/ScreenGoal";
-import ScreenResults from "./Screens/ScreenResults/ScreenResults";
-
-import "./Card.css";
+import ScreenStart from "../Screens/ScreenStart/ScreenStart";
+import ScreenGender from "../Screens/ScreenGender/ScreenGender";
+import ScreenStats from "../Screens/ScreenStats/ScreenStats";
+import ScreenActivity from "../Screens/ScreenActivity/ScreenActivity";
+import ScreenGoal from "../Screens/ScreenGoal/ScreenGoal";
+import ScreenResults from "../Screens/ScreenResults/ScreenResults";
 
 class Card extends React.Component {
   state = {
@@ -49,7 +47,7 @@ class Card extends React.Component {
 
   render() {
     return (
-      <div className="ui text container" id="card-container">
+      <div className="ui text container" style={{ marginTop: "30px" }}>
         <div className="ui large segment very padded center aligned">
           <ScreenStart
             activeSection={this.state.activeSection}

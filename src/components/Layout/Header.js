@@ -1,5 +1,5 @@
 import React from "react";
-import icon from "../assets/calories.png";
+import icon from "../../assets/calories.png";
 
 const headlineStyle = {
   color: "#3f3d56"

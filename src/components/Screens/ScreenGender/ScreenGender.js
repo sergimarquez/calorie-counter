@@ -1,6 +1,7 @@
 import React from "react";
 import NextButton from "../../UI/NextButton";
 import BackButton from "../../UI/BackButton";
+
 import male from "../../../assets/male.png";
 import female from "../../../assets/female.png";
 

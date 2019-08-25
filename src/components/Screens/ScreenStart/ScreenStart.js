@@ -12,7 +12,7 @@ class ScreenStart extends React.Component {
     if (this.show) {
       return (
         <div>
-          <h2 className="ui header">How many Calories?</h2>
+          <h2 className="ui header">Calculate your daily calories intake</h2>
           <div className="ui image medium start-image transition">
             <img src={dinner} alt="people having dinner" />
           </div>
