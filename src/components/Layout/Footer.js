@@ -12,7 +12,10 @@ const Footer = () => {
       style={footerPosition}
       className="ui inverted vertical footer segment center aligned"
     >
-      Created by Sergi Marquez | FAQ
+      Created by <a href="https://sergimarquez.dev">Sergi Marquez</a> |{" "}
+      <a href="https://github.com/sergimarquez/calorie-counter">
+        <i className="github icon"></i>
+      </a>
     </footer>
   );
 };
