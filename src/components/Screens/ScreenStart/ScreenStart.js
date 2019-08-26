@@ -1,7 +1,6 @@
 import React from "react";
 import NextButton from "../../UI/NextButton";
 import dinner from "../../../assets/dinner.svg";
-import "./ScreenStart.css";
 
 class ScreenStart extends React.Component {
   get show() {
@@ -9,11 +8,17 @@ class ScreenStart extends React.Component {
   }
 
   render() {
+    const imgStyle = {
+      marginTop: "20px",
+      marginBottom: "20px",
+      padding: "5px"
+    };
+
     if (this.show) {
       return (
         <div>
           <h2 className="ui header">Calculate your daily calories intake</h2>
-          <div className="ui image medium start-image transition">
+          <div className="ui image medium transition" style={imgStyle}>
             <img src={dinner} alt="people having dinner" />
           </div>
           <p> Discover how many calories you should eat every day. </p>
